@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menang">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/menang"
+        android:background="@drawable/tentang"
+        />
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/teksuang"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/quamine"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT KAMU MEMBAWA PULANG UANG 1 MILYAR"/>
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/teksuang"
+        android:src="@drawable/matauang"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <Button
+        android:id="@+id/ulang"
+        android:background="#00c853"
+        android:layout_alignLeft="@+id/gambar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gambar"
+        android:text="ULANG"
+        android:textColor="@android:color/white"
+        android:layout_width="90dp"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/kembali"
+        android:background="#d50000"
+        android:layout_alignRight="@+id/gambar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gambar"
+        android:text="MENU"
+        android:textColor="@android:color/white"
+        android:layout_width="90dp"
+        android:layout_height="40dp" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rate"
+        android:background="#ffd600"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ulang"
+        android:text="RATE"
+        android:textColor="@android:color/white"
+        android:layout_width="90dp"
+        android:layout_height="40dp" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

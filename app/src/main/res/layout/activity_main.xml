@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:padding="16dp">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logokuis"
+        android:src="@drawable/logokuis"
+        android:layout_width="175dp"
+        android:layout_height="175dp" />
+    <Button
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/smilen"
+        android:id="@+id/mulai_btn"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/logokuis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="MULAI"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/smilen"
+        android:id="@+id/tentang"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/mulai_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TENTANG"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/bintang"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tentang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/smilen"
+        android:text="BINTANG"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/smilen"
+        android:id="@+id/privacypolicy"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/bintang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="PRIVACY POLICY"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
